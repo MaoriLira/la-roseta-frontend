@@ -1,50 +1,80 @@
 [
   {
     "id": 1,
-    "img": "roseta_image_1.jpg",
-    "es": { "title": "Boda Civil Luxury", "desc": "Backdrop 4x3m • Tonos Crema" },
-    "en": { "title": "Luxury Civil Wedding", "desc": "Backdrop 12x10ft • Cream Tones" }
+    "img": "backdrop-wedding-blush.jpg",
+    "es": { "title": "Backdrop Boda Blush", "desc": "Muro floral • Tonos crema y rosa" },
+    "en": { "title": "Blush Wedding Backdrop", "desc": "Floral wall • Cream & pink tones" }
   },
   {
     "id": 2,
-    "img": "roseta_image_2.jpg",
-    "es": { "title": "Spring Baby Shower", "desc": "Set Fotográfico • Tonos Vibrantes" },
-    "en": { "title": "Spring Baby Shower", "desc": "Photo Set • Vibrant Tones" }
+    "img": "backdrop-tropical-multicolor.jpg",
+    "es": { "title": "Backdrop Tropical", "desc": "Set fotográfico • Colores vibrantes" },
+    "en": { "title": "Tropical Backdrop", "desc": "Photo set • Vibrant colors" }
   },
   {
     "id": 3,
-    "img": "roseta_image_3.jpg",
-    "es": { "title": "Editorial & Branding", "desc": "Decoración de Vitrina • Diseño Custom" },
-    "en": { "title": "Editorial & Branding", "desc": "Storefront Decor • Custom Design" }
+    "img": "wedding-hall-white-luxury.jpg",
+    "es": { "title": "Salón de Bodas Luxury", "desc": "Decoración de techo • Pétalos blancos" },
+    "en": { "title": "Luxury Wedding Hall", "desc": "Ceiling decor • White petals" }
   },
   {
     "id": 4,
-    "img": "roseta_image_4.jpeg",
-    "es": { "title": "Decoración Floral", "desc": "Diseño Exclusivo • Estilo Natural" },
-    "en": { "title": "Floral Decoration", "desc": "Exclusive Design • Natural Style" }
+    "img": "petal-closeup-white.jpg",
+    "es": { "title": "Detalle de Pétalos", "desc": "Flores gigantes • Papel italiano blanco" },
+    "en": { "title": "Petal Detail", "desc": "Giant flowers • White Italian paper" }
   },
   {
     "id": 5,
-    "img": "roseta_image_5.jpeg",
-    "es": { "title": "Backdrop Eventos", "desc": "Flores Gigantes • Papel Italiano" },
-    "en": { "title": "Event Backdrop", "desc": "Giant Flowers • Italian Paper" }
+    "img": "installation-diademuertos.jpg",
+    "es": { "title": "Instalación Día de Muertos", "desc": "Flores gigantes • Naranja y amarillo" },
+    "en": { "title": "Day of the Dead Installation", "desc": "Giant flowers • Orange & yellow" }
   },
   {
     "id": 6,
-    "img": "roseta_image_6.png",
-    "es": { "title": "Centro de Mesa", "desc": "Detalles Finos • Hecho a Mano" },
-    "en": { "title": "Centerpiece", "desc": "Fine Details • Handmade" }
+    "img": "installation-tropical-leaves.jpg",
+    "es": { "title": "Hojas Tropicales", "desc": "Arte en papel • Ambiente rústico" },
+    "en": { "title": "Tropical Leaves", "desc": "Paper art • Rustic ambiance" }
   },
   {
     "id": 7,
-    "img": "roseta_image_7.jpeg",
-    "es": { "title": "Boda Luxury", "desc": "Ambiente Romántico • Tonos Pastel" },
-    "en": { "title": "Luxury Wedding", "desc": "Romantic Vibe • Pastel Tones" }
+    "img": "installation-tropical-illuminated.png",
+    "es": { "title": "Instalación Iluminada", "desc": "Hojas tropicales • Luz ambiental" },
+    "en": { "title": "Illuminated Installation", "desc": "Tropical leaves • Ambient lighting" }
   },
   {
     "id": 8,
-    "img": "roseta_image_8.png",
-    "es": { "title": "Set Fotográfico", "desc": "Colores Vivos • Alto Impacto" },
-    "en": { "title": "Photo Set", "desc": "Vivid Colors • High Impact" }
+    "img": "lamps-paper-white.jpg",
+    "es": { "title": "Lámparas de Papel", "desc": "Esculturas florales • Hecho a mano" },
+    "en": { "title": "Paper Flower Lamps", "desc": "Floral sculptures • Handmade" }
+  },
+  {
+    "id": 9,
+    "img": "artist-workshop-crafting.jpg",
+    "es": { "title": "El Arte del Proceso", "desc": "Taller artesanal • Detrás de escena" },
+    "en": { "title": "The Art of Crafting", "desc": "Artisan workshop • Behind the scenes" }
+  },
+  {
+    "id": 10,
+    "img": "backdrop-tropical-white.jpg",
+    "es": { "title": "Backdrop Tropical Blanco", "desc": "Hojas de papel • Fondo rosa" },
+    "en": { "title": "White Tropical Backdrop", "desc": "Paper leaves • Pink background" }
+  },
+  {
+    "id": 11,
+    "img": "roses-garden-red-cream.jpg",
+    "es": { "title": "Rosas Gigantes", "desc": "Flores de papel • Jardín exterior" },
+    "en": { "title": "Giant Roses", "desc": "Paper flowers • Outdoor garden" }
+  },
+  {
+    "id": 12,
+    "img": "portrait-garden-colorful-01.jpg",
+    "es": { "title": "Jardín Floral I", "desc": "Flores gigantes • Sesión fotográfica" },
+    "en": { "title": "Floral Garden I", "desc": "Giant flowers • Photo session" }
+  },
+  {
+    "id": 13,
+    "img": "portrait-garden-colorful-02.png",
+    "es": { "title": "Jardín Floral II", "desc": "Flores gigantes • Colores pastel" },
+    "en": { "title": "Floral Garden II", "desc": "Giant flowers • Pastel colors" }
   }
 ]
