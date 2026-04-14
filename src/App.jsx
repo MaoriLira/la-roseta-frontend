@@ -101,7 +101,7 @@ function App() {
         <div className="order-1 md:order-2 relative group">
           <div className="absolute inset-0 bg-roseta-primary rounded-3xl rotate-3 opacity-10 group-hover:rotate-6 transition duration-500"></div>
           <img 
-            src={`${CDN_URL}/images/roseta_image_4.jpeg`}
+            src={`${CDN_URL}/images/wedding-hall-white-luxury.jpg`}
             alt="Hero Decor" 
             className="relative rounded-3xl shadow-2xl object-cover h-[400px] md:h-[600px] w-full transform group-hover:-translate-y-2 transition duration-500"
             onError={(e) => { e.target.src = "https://via.placeholder.com/600x800" }}
