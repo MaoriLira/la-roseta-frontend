@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "img": "roseta_image_1.jpg",
+    "es": { "title": "Boda Civil Luxury", "desc": "Backdrop 4x3m • Tonos Crema" },
+    "en": { "title": "Luxury Civil Wedding", "desc": "Backdrop 12x10ft • Cream Tones" }
+  },
+  {
+    "id": 2,
+    "img": "roseta_image_2.jpg",
+    "es": { "title": "Spring Baby Shower", "desc": "Set Fotográfico • Tonos Vibrantes" },
+    "en": { "title": "Spring Baby Shower", "desc": "Photo Set • Vibrant Tones" }
+  },
+  {
+    "id": 3,
+    "img": "roseta_image_3.jpg",
+    "es": { "title": "Editorial & Branding", "desc": "Decoración de Vitrina • Diseño Custom" },
+    "en": { "title": "Editorial & Branding", "desc": "Storefront Decor • Custom Design" }
+  },
+  {
+    "id": 4,
+    "img": "roseta_image_4.jpeg",
+    "es": { "title": "Decoración Floral", "desc": "Diseño Exclusivo • Estilo Natural" },
+    "en": { "title": "Floral Decoration", "desc": "Exclusive Design • Natural Style" }
+  },
+  {
+    "id": 5,
+    "img": "roseta_image_5.jpeg",
+    "es": { "title": "Backdrop Eventos", "desc": "Flores Gigantes • Papel Italiano" },
+    "en": { "title": "Event Backdrop", "desc": "Giant Flowers • Italian Paper" }
+  },
+  {
+    "id": 6,
+    "img": "roseta_image_6.png",
+    "es": { "title": "Centro de Mesa", "desc": "Detalles Finos • Hecho a Mano" },
+    "en": { "title": "Centerpiece", "desc": "Fine Details • Handmade" }
+  },
+  {
+    "id": 7,
+    "img": "roseta_image_7.jpeg",
+    "es": { "title": "Boda Luxury", "desc": "Ambiente Romántico • Tonos Pastel" },
+    "en": { "title": "Luxury Wedding", "desc": "Romantic Vibe • Pastel Tones" }
+  },
+  {
+    "id": 8,
+    "img": "roseta_image_8.png",
+    "es": { "title": "Set Fotográfico", "desc": "Colores Vivos • Alto Impacto" },
+    "en": { "title": "Photo Set", "desc": "Vivid Colors • High Impact" }
+  }
+]
