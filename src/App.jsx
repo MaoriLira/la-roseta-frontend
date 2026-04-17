@@ -16,19 +16,35 @@ function App() {
 
   // 2. ESTADO DE DATOS (FOTOS)
   const [portfolioItems, setPortfolioItems] = useState([]);
-  
-  // 3. ESTADO DEL FORMULARIO
+
+  // 3. ESTADO DEL CARRUSEL (ABOUT)
+  const aboutPhotos = [
+    'artist-workshop-crafting.jpg',
+    'backdrop-tropical-white.jpg',
+    'installation-diademuertos.jpg',
+    'installation-tropical-leaves.jpg',
+  ];
+  const [currentAboutPhoto, setCurrentAboutPhoto] = useState(0);
+
+  // 4. ESTADO DEL FORMULARIO
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', description: '' });
-  const [status, setStatus] = useState('idle'); 
+  const [status, setStatus] = useState('idle');
   const [orderId, setOrderId] = useState('');
 
   // --- EFECTO: CARGAR DATOS DE S3 AL INICIAR ---
   useEffect(() => {
-    // Descarga el archivo data.json que subimos a S3
     fetch(`${CDN_URL}/data/data.json`)
       .then(response => response.json())
       .then(data => setPortfolioItems(data))
       .catch(error => console.error("Error cargando portafolio:", error));
+  }, []);
+
+  // --- EFECTO: AVANZAR CARRUSEL AUTOMÁTICAMENTE ---
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentAboutPhoto(prev => (prev + 1) % aboutPhotos.length);
+    }, 3500);
+    return () => clearInterval(timer);
   }, []);
 
   // Función para cambiar idioma
@@ -64,6 +80,7 @@ function App() {
         <div className="flex items-center gap-6">
           <div className="hidden md:flex gap-6 text-sm font-medium text-gray-500">
             <a href="#portfolio" className="hover:text-roseta-primary transition">{t.nav.portfolio}</a>
+            <a href="#about" className="hover:text-roseta-primary transition">{t.nav.about}</a>
             <a href="#contact" className="text-roseta-primary font-bold">{t.nav.quote}</a>
           </div>
 
@@ -143,6 +160,74 @@ function App() {
               ))}
             </div>
           )}
+        </div>
+      </section>
+
+      {/* --- ABOUT ZULMA --- */}
+      <section id="about" className="py-24 bg-[#fdf6f0]">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+          {/* Carrusel de fotos con transición fade */}
+          <div className="relative h-[540px] rounded-3xl overflow-hidden shadow-2xl">
+            {aboutPhotos.map((photo, idx) => (
+              <img
+                key={photo}
+                src={`${CDN_URL}/images/${photo}`}
+                alt={`Zulma ${idx + 1}`}
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                  idx === currentAboutPhoto ? 'opacity-100' : 'opacity-0'
+                }`}
+              />
+            ))}
+            {/* Overlay degradado abajo */}
+            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/40 to-transparent" />
+            {/* Indicadores (dots) */}
+            <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+              {aboutPhotos.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setCurrentAboutPhoto(idx)}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    idx === currentAboutPhoto ? 'bg-white w-6' : 'bg-white/50 w-2'
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Texto sobre Zulma */}
+          <div className="flex flex-col justify-center">
+            <span className="text-roseta-primary text-sm font-bold uppercase tracking-widest mb-4">
+              {t.about.tag}
+            </span>
+            <h2 className="text-5xl font-serif font-bold text-gray-900 mb-2">
+              {t.about.name}
+            </h2>
+            <p className="text-xl text-gray-400 font-serif italic mb-8">
+              {t.about.title}
+            </p>
+            <div className="space-y-4 text-gray-600 leading-relaxed">
+              <p>{t.about.p1}</p>
+              <p>{t.about.p2}</p>
+              <p>{t.about.p3}</p>
+            </div>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-4 mt-10 pt-8 border-t border-rose-100">
+              {[t.about.stat1, t.about.stat2, t.about.stat3].map((stat) => (
+                <div key={stat} className="text-center">
+                  <p className="text-xs text-gray-500 leading-snug">{stat}</p>
+                </div>
+              ))}
+            </div>
+
+            <a
+              href="#contact"
+              className="mt-10 self-start inline-block bg-roseta-primary text-white px-8 py-4 rounded-full font-bold hover:bg-pink-800 transition shadow-lg transform hover:-translate-y-1"
+            >
+              {t.hero.cta1}
+            </a>
+          </div>
         </div>
       </section>
 

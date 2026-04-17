@@ -2,7 +2,19 @@ export const translations = {
   es: {
     nav: {
       portfolio: "Portafolio",
+      about: "Acerca de",
       quote: "Cotizar"
+    },
+    about: {
+      tag: "La creadora",
+      name: "Zulma",
+      title: "La artista detrás de cada pétalo",
+      p1: "Mi nombre es Zulma y me dedico a crear flores de papel gigantes que transforman cualquier espacio en una obra de arte. Lo que comenzó como una pasión personal se convirtió en un estudio dedicado a hacer momentos únicos e inolvidables.",
+      p2: "Cada flor que sale de mis manos es cortada, moldeada y ensamblada a mano, pieza por pieza, con papeles de la más alta calidad para garantizar que cada creación conserve su belleza para siempre.",
+      p3: "He decorado bodas, quinceañeras, sesiones fotográficas y eventos corporativos en México y los Estados Unidos. Mi misión es simple: convertir tu visión en flores que cuenten tu historia.",
+      stat1: "Más de 8 años de experiencia",
+      stat2: "México & USA",
+      stat3: "Cada pieza hecha a mano"
     },
     hero: {
       title1: "Arte Floral",
@@ -38,7 +50,19 @@ export const translations = {
   en: {
     nav: {
       portfolio: "Portfolio",
+      about: "About",
       quote: "Get a Quote"
+    },
+    about: {
+      tag: "The creator",
+      name: "Zulma",
+      title: "The artist behind every petal",
+      p1: "My name is Zulma and I dedicate myself to creating giant paper flowers that transform any space into a work of art. What started as a personal passion became a studio devoted to making unique and unforgettable moments.",
+      p2: "Every flower that leaves my hands is cut, shaped, and assembled by hand, piece by piece, using the highest quality papers to ensure each creation preserves its beauty forever.",
+      p3: "I have decorated weddings, quinceañeras, photo sessions, and corporate events across Mexico and the United States. My mission is simple: turn your vision into flowers that tell your story.",
+      stat1: "8+ years of experience",
+      stat2: "Mexico & USA",
+      stat3: "Every piece handmade"
     },
     hero: {
       title1: "Floral Art",
